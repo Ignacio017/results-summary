@@ -1,0 +1,184 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --alice-blue:aliceblue;
+  --opacity-6:.6;
+}
+
+body {
+  font-family:'Zilla Slab', serif;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  min-height: 100vh;
+}
+
+#result-container {
+  position: relative;
+  width: 15em;
+  height: 22em;
+  background: rgb(120,87,255);
+  background: linear-gradient(to bottom right, rgba(120,87,255,1) 16%, rgba(46,43,233,1) 79%);
+  border-radius: 1.5em;
+}
+
+#your-result-container {
+  text-align: center;
+  margin-top: 1em;
+  color: var(--alice-blue);
+  opacity: var(--opacity-6);
+  font-weight: 400;
+}
+
+
+#circle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  background: rgb(78,33,202);
+  background: linear-gradient(to left, rgba(78,33,202,1) 24%, rgba(36,33,202,1) 67%);
+}
+
+
+
+#result {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.7;
+  letter-spacing: 3px;
+  margin-top: .5em;
+  color: var(--alice-blue);
+}
+
+#circle-text {
+  text-align: center;
+  font-weight: 500;
+  opacity: var(--opacity-6);
+  color: var(--alice-blue);
+}
+
+#result-level {
+  margin-top: 1em;
+  font-weight: 800;
+  text-align: center;
+  color: var(--alice-blue);
+}
+
+#result-compare-container {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+  height: 10em;
+  color: var(--alice-blue);
+}
+
+#result-compare {
+  text-align: center;
+  font-weight: 400;
+  opacity: var(--opacity-6);
+}
+
+#summary-container {
+  position: relative;
+  width: 15em;
+  height: 22em;
+}
+
+
+#summary {
+  margin:1em 0 0 1.5em;
+  font-weight: 700;
+}
+
+
+.categorie {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 1em auto 0 auto;
+  width: 80%;
+  height: 2.5em;
+  border-radius: .5em;
+
+}
+
+.categorie:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.categorie:not(hover) {
+  transition: 1s;
+}
+
+.asset {
+  width: 1em;
+  margin:0 .5em 0 .5em;
+}
+
+.punctuation {
+  position: absolute;
+  right: .5em;
+}
+
+
+#reaction {
+  background-color: hsl(0, 100%, 67%,.1);
+  color: hsl(0, 100%, 67%);
+}
+
+#memory {
+  background-color: hsl(39, 100%, 56%,.1);
+  color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+  background-color: hsl(166, 100%, 37%,.1);
+  color: hsl(166, 100%, 37%);
+}
+
+#visual {
+  background-color:  hsl(234, 85%, 45%,.1);
+  color: hsl(234, 85%, 45%);;
+}
+
+#button-container {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#button {
+  width: 90%;
+  height: 3em;
+  background-color:  hsl(224, 30%, 27%);
+  color: var(--alice-blue);
+  border: none;
+  border-radius: 2em;
+}
+
+#button:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+#button:not(hover) {
+  transition: 1s;
+}
