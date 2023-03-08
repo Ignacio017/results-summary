@@ -100,6 +100,9 @@ body {
   position: relative;
   width: 15em;
   height: 22em;
+  border-top-right-radius: 1.5em;
+  border-bottom-right-radius:1.5em ;
+  box-shadow: 35px -10px 55px -75px black;
 }
 
 
